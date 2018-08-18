@@ -26,9 +26,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="login float-right">
-                                <a href="../design/login.html"><i class="fas fa-sign-in-alt"></i>  লগইন</a>
-                            </div>
+                                <div class="login float-right">
+                                    <ul class="top-social-link">
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                        <li>
+                                            <a href="../design/login.html"> লগইন <i class="fas fa-sign-in-alt"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -40,18 +49,23 @@
                             <div class="logo">
                                 <a href="index.html"><img src="images/logo1.png" alt="Logo"></a>
                             </div>
+                            
+                            <div class="res-nav-switcher">
+                                    <i class="fa fa-bars"></i>
+                                </div>
                         </div>
                         <div class="col-lg-9">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html"><i class="fa fa-home"></i> হোম</a></li>
-                                    <li><a href="about.html"><i class="fa fa-info-circle"></i> আমাদের সম্পর্কে</a></li>
-                                    <li><a href="gallery.html"><i class="fa fa-info-circle"></i> গ্যালারি</a></li>
-                                    <li><a href="news.html"><i class="fa fa-newspaper"></i> খবর</a></li>
-                                    <li><a href="contact.html"><i class="fa fa-envelope"></i> যোগাযোগ</a></li>
-                                    <li><a href="download.html" class="btn btn-success"><i class="fa fa-download"></i> ডাউনলোড</a></li>
-                                </ul>
-                            </nav>
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html"><i class="fa fa-home"></i> হোম</a></li>
+                                        <li><a href="about.html"><i class="fa fa-info-circle"></i> আমাদের সম্পর্কে</a></li>
+                                        <li><a href="news.html"><i class="fa fa-newspaper"></i> খবর</a></li>
+                                        <li><a href="shomitee-list.html"><i class="fa fa-sitemap"></i> সমিতি সমূহ</a></li>
+                                        <li><a href="gallery.html"><i class="fa fa-images"></i> গ্যালারি</a></li>
+                                        <li><a href="contact.html"><i class="fa fa-envelope"></i> যোগাযোগ</a></li>
+                                        <li><a href="download.html" class="btn btn-primary"><i class="fa fa-download"></i> ডাউনলোড</a></li>
+                                    </ul>
+                                </nav>
                         </div>
                     </div>
                 </div>
@@ -73,8 +87,85 @@
         <section class="body-sec bn">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="headline">অনলাইনে যোগাযোগ</h2>
+                        <div class="border-div"></div>
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                                <!--Grid row-->
+                                <div class="row">
+                
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="name" class="">আপনার নাম</label>
+                                            <input type="text" id="name" name="name" class="form-control" placeholder="আপনার নাম ">
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="email" class="">আপনার ইমেইল </label>
+                                            <input type="text" id="email" name="email" class="form-control" placeholder="আপনার ইমেইল ">
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                
+                                </div>
+                                <!--Grid row-->
+                
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="subject" class="">বিষয় </label>
+                                            <input type="text" id="subject" name="subject" class="form-control" placeholder="বিষয় ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                
+                                <!--Grid row-->
+                                <div class="row">
+                
+                                        <!--Grid column-->
+                                        <div class="col-md-12">
+                    
+                                            <div class="md-form">
+                                                <label for="message">আপনার মেসেজ </label>
+                                                <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" placeholder="আপনার মেসেজ "></textarea>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                        <!--Grid column-->
+                                        <div class="col-md-12"><br>
+                                            <div class="md-form">
+                                                <button class="btn btn-primary float-right" type="submit">পাঠান </button>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+                
+                            </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="headline">সরাসরি যোগাযোগ</h2>
+                        <div class="border-div"></div>
+                        <p class="">
+                           <i class="fa fa-phone"></i> 02-9144540 <br><br>
+                           <i class="fa fa-at"></i> jr_dhaka@yahoo.com<br><br>
+                           <i class="fa fa-map-marker"></i> বিভাগীয় সমবায় কার্যালয় , ঢাকা বিভাগ, ঢাকা, সমবায় ভবন(৩য় তলা) আগারগাঁও সিভিক সেক্টর, শেরেবাংলা নগর, ঢাকা-১২০৭।
+                        </p>
+                    </div>
                     <div class="col-lg-12">
-                        <h2 class="headline">অবস্থান মানচিত্র</h2>
+                        <h2 class="headline"><i class="fa fa-map"></i> অবস্থান মানচিত্র</h2>
                         <div class="border-div"></div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7302.431239304904!2d90.369169!3d23.775335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc94db95f679ef1d4!2sSamabaya+Bhaban!5e0!3m2!1sen!2sbd!4v1531207267989" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
@@ -82,20 +173,11 @@
             </div>
         </section>
     </main>
+    
     <footer>
-        <div class="footer-top bn">
-            <div class="container">
-                <div class="row">
-                        <div class="col-sm-3">
-                            <h5>গুরুত্বপূর্ণ লিংক</h5>
-                            <div class="border-div"></div>
-                            <ul>
-                                <li><a href="http://www.coop.gov.bd/">সমবায় অধিদপ্তর</a></li>
-                                <li><a href="http://www.bca.gov.bd/">বাংলাদেশ সমবায় একাডেমি</a></li>
-                                <li><a href="http://www.geeksntechnology.com/ors/">অনলাইন রেজিস্ট্রেশন</a></li>
-                                <li><a href="http://bit.ly/2mS8nAW">সমবায় অধিদপ্তর, অ্যাপস</a></li>
-                            </ul>
-                        </div>
+            <div class="footer-top bn">
+                <div class="container">
+                    <div class="row">
                         <div class="col-sm-3">
                             <h5>সরাসরি লিংক</h5>
                             <div class="border-div"></div>
@@ -107,73 +189,167 @@
                             </ul>
                         </div>
                         <div class="col-sm-3">
-                            <h5>অন্যান্য লিংক</h5>
+                            <h5>অন্যান লিংক</h5>
                             <div class="border-div"></div>
-                            
+                            <ul>
+                                <li><a href="about.html">ব্লগ</a></li>
+                                <li><a href="news.html">অফ এ কিউ</a></li>
+                                <li><a href="contact.html">প্রাইভেসি এন্ড পলিসি </a></li>
+                                <li><a href="download.html">ডাউনলোড</a></li>
+                            </ul>
                         </div>
                         <div class="col-sm-3">
-                            <div>
-                                <h5>উদ্ভাবক</h5>
-                                <div class="border-div"></div>
-                                <div class="">
-                                    <img src="images/zb.jpg" class="img-responsive">
-                                    <h2>জেবুন নাহার </h2>
-                                    <p>উপ নিবন্ধক</p>
-                                    <p>বিভাগীয় সমবায় কার্যালয়, ঢাকা।</p>
-                                </div>
-                            </div>
+                            <h5>বিভাগের কিছু সমিতি</h5>
+                            <div class="border-div"></div>
+                            <ul>
+                                <li><a href="about.html">সমবায় সমিতি</a></li>
+                                <li><a href="news.html">ফরিদপুর জেলা</a></li>
+                                <li><a href="contact.html">যোগাযোগ</a></li>
+                                <li><a href="download.html">ডাউনলোড</a></li>
+                            </ul>
                         </div>
+                        <div class="col-sm-3 text-right">
+                            <h5>গুরুত্বপূর্ণ লিংক</h5>
+                            <div class="border-div float-right"></div>
+                            <br>
+                            <ul>
+                                <li><a href="http://www.coop.gov.bd/">সমবায় অধিদপ্তর</a></li>
+                                <li><a href="http://www.bca.gov.bd/">বাংলাদেশ সমবায় একাডেমি</a></li>
+                                <li><a href="http://www.geeksntechnology.com/ors/">অনলাইন রেজিস্ট্রেশন</a></li>
+                                <li><a href="http://bit.ly/2mS8nAW">সমবায় অধিদপ্তর, অ্যাপস</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom bn">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        কপিরাইট © ২০১৮ - বিভাগীয় সমবায় কার্যালয়, ঢাকা।
-                    </div>
-                    <div class="col-lg-6 text-right">
+            <div class="footer-bottom bn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            কপিরাইট © ২০১৮ - বিভাগীয় সমবায় কার্যালয়, ঢাকা।
+                        </div>
+                        <div class="col-lg-6 text-right">
                             উদ্ভাবনী প্রকল্প : "অনলাইন অফিস ব্যবস্থাপনা"।
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-  <!-- script -->
-  <script src="vendors/jquery/jquery.min.js"></script>
-  
-  <script src="js/main.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  
-  <script src="vendors/js/bootstrap.min.js"></script>
-  <script src="vendors/js/wow.min.js"></script>
-  <script src="vendors/js/lightslider.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script>
-      new WOW().init();
-      $(document).ready(function(){
-        $("#lightSlider").lightSlider({
-            item: 4,
-            auto:true,
-            loop:true,
-            pauseOnHover: true
-        });
-
-        $(".res-nav").click(function(){
-            $('.overly').toggle();
-            $('nav').animate({
-            width: "toggle"
-        });
-        })
-        $(".overly").click(function(){
-        $('nav').animate({
-            width: "toggle"
-        });
-        $(this).hide();
-        });
-      });
-  </script>
-</body>
-</html>
+        </footer>
+    
+      <!-- script -->
+      <script src="vendors/jquery/jquery.min.js"></script>
+      
+      <script src="js/main.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      
+      <script src="vendors/js/bootstrap.min.js"></script>
+      <script src="vendors/js/wow.min.js"></script>
+      <script src="vendors/js/lightslider.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+          new WOW().init();
+    
+          $(document).ready(function(){
+            $(".res-nav-switcher").click(function(){
+                $("nav").slideToggle();
+            })
+    
+            $("#lightSlider").lightSlider({
+                item: 4,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }
+            ]
+            });
+            $("#lightSlider1").lightSlider({
+                item: 3,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }
+            ]
+            });
+            $("#lightSlider2").lightSlider({
+                item: 4,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }]
+            });
+    
+            
+            $("#brand").lightSlider({
+                item: 6,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }]
+            });
+    
+     
+          });
+      </script>
+    </body>
+    </html>

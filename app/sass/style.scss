@@ -666,3 +666,21 @@ footer{
 .shomitee-img{
 	width: 120px;
 }
+.nav-tabs{
+	.nav-link{
+		background: $primary;
+		color: $light-x;
+		border-radius: 0px !important;
+		border: 0px !important;
+		&:hover{
+			background: $secondary;
+		}
+	}
+	.nav-link.active{
+		background: $secondary !important;
+		color: $light-x !important;
+	}
+}
+.tab-content{
+	border: 1px solid $secondary !important;
+}
