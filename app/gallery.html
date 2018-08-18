@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/css/lightslider.min.css">
+    <link rel="stylesheet" href="vendors/css/lightbox.min.css">
     <link rel="stylesheet" href="vendors/css/animate.min.css">
     
     <!-- fontawesome -->
@@ -38,6 +39,7 @@
                                         </li>
                                     </ul>
                                 </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -49,7 +51,6 @@
                             <div class="logo">
                                 <a href="index.html"><img src="images/logo1.png" alt="Logo"></a>
                             </div>
-                            
                             <div class="res-nav-switcher">
                                     <i class="fa fa-bars"></i>
                                 </div>
@@ -77,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-title bn">যোগাযোগ</h2>
+                        <h2 class="page-title bn">গ্যালারি</h2>
                     </div>
                 </div>
             </div>
@@ -86,92 +87,36 @@
     <main>
         <section class="body-sec bn">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="headline">অনলাইনে যোগাযোগ</h2>
-                        <div class="border-div"></div>
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                                <!--Grid row-->
-                                <div class="row">
-                
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <label for="name" class="">আপনার নাম</label>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder="আপনার নাম ">
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-                
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <label for="email" class="">আপনার ইমেইল </label>
-                                            <input type="text" id="email" name="email" class="form-control" placeholder="আপনার ইমেইল ">
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-                
-                                </div>
-                                <!--Grid row-->
-                
-                                <!--Grid row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="md-form mb-0">
-                                            <label for="subject" class="">বিষয় </label>
-                                            <input type="text" id="subject" name="subject" class="form-control" placeholder="বিষয় ">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Grid row-->
-                
-                                <!--Grid row-->
-                                <div class="row">
-                
-                                        <!--Grid column-->
-                                        <div class="col-md-12">
                     
-                                            <div class="md-form">
-                                                <label for="message">আপনার মেসেজ </label>
-                                                <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" placeholder="আপনার মেসেজ "></textarea>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                                    <!--Grid row-->
-                                <!--Grid row-->
-                                <div class="row">
-                                        <!--Grid column-->
-                                        <div class="col-md-12"><br>
-                                            <div class="md-form">
-                                                <button class="btn btn-primary float-right" type="submit">পাঠান </button>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                                    <!--Grid row-->
-                
-                            </form>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="headline">সরাসরি যোগাযোগ</h2>
-                        <div class="border-div"></div>
-                        <p class="">
-                           <i class="fa fa-phone"></i> 02-9144540 <br><br>
-                           <i class="fa fa-at"></i> jr_dhaka@yahoo.com<br><br>
-                           <i class="fa fa-map-marker"></i> বিভাগীয় সমবায় কার্যালয় , ঢাকা বিভাগ, ঢাকা, সমবায় ভবন(৩য় তলা) আগারগাঁও সিভিক সেক্টর, শেরেবাংলা নগর, ঢাকা-১২০৭।
-                        </p>
-                    </div>
-                    <div class="col-lg-12">
-                        <h2 class="headline"><i class="fa fa-map"></i> অবস্থান মানচিত্র</h2>
-                        <div class="border-div"></div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7302.431239304904!2d90.369169!3d23.775335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc94db95f679ef1d4!2sSamabaya+Bhaban!5e0!3m2!1sen!2sbd!4v1531207267989" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                <div class="row gallery-sec">
+                        <div class="col-lg-3">
+                            <a href="images/b1.jpg" data-lightbox="roadtrip"><img src="images/b1.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/b2.jpg" data-lightbox="roadtrip"><img src="images/b2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/b3.jpg" data-lightbox="roadtrip"><img src="images/b3.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/b4.jpg" data-lightbox="roadtrip"><img src="images/b4.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/s_1.jpg" data-lightbox="roadtrip"><img src="images/s_1.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/s_2.jpg" data-lightbox="roadtrip"><img src="images/s_2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/s_3.jpg" data-lightbox="roadtrip"><img src="images/s_3.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="images/s_4.jpg" data-lightbox="roadtrip"><img src="images/s_4.jpg" alt=""></a>
+                        </div>
                 </div>
             </div>
         </section>
+
     </main>
     
     <footer>
@@ -234,7 +179,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+    </footer>
     
       <!-- script -->
       <script src="vendors/jquery/jquery.min.js"></script>
@@ -246,6 +191,7 @@
       <script src="vendors/js/bootstrap.min.js"></script>
       <script src="vendors/js/wow.min.js"></script>
       <script src="vendors/js/lightslider.min.js"></script>
+      <script src="vendors/js/lightbox.min.js"></script>
       <script src="js/custom.js"></script>
       <script>
           new WOW().init();

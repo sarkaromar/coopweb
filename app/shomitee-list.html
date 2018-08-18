@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COOP WEB</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/lightslider.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.min.css">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- <script defer src="js/fa.js"></script> -->
+    <!-- হোম
+আমাদের সম্পর্কে
+যোগাযোগ
+ডাউনলোড
+লগইন -->
+</head>
+<body>
+    <header>
+            <div class="header-top bn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                <div class="login float-right">
+                                    <ul class="top-social-link">
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                        <li>
+                                            <a href="../design/login.html"> লগইন <i class="fas fa-sign-in-alt"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav bn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/logo1.png" alt="Logo"></a>
+                            </div>
+                            <div class="res-nav-switcher">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html"><i class="fa fa-home"></i> হোম</a></li>
+                                        <li><a href="about.html"><i class="fa fa-info-circle"></i> আমাদের সম্পর্কে</a></li>
+                                        <li><a href="news.html"><i class="fa fa-newspaper"></i> খবর</a></li>
+                                        <li><a href="shomitee-list.html"><i class="fa fa-sitemap"></i> সমিতি সমূহ</a></li>
+                                        <li><a href="gallery.html"><i class="fa fa-images"></i> গ্যালারি</a></li>
+                                        <li><a href="contact.html"><i class="fa fa-envelope"></i> যোগাযোগ</a></li>
+                                        <li><a href="download.html" class="btn btn-primary"><i class="fa fa-download"></i> ডাউনলোড</a></li>
+                                    </ul>
+                                </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="sub-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-title bn">সমবায় সমিতি সমূহ</h2>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <main>
+        <section class="body-sec bn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                    
+                        <h2 class="headline">এক নজরে এই বিভাগের সকল জেলার সমবায় সমিতি সমূহ</h2>
+                        <div class="border-div"></div>
+
+                        <form method="POST">
+                            <div class="row">
+                                
+                                <div class="col-md-3">
+                                    <label>জেলা</label>
+                                    <select id="dist_id" name="dist_id" class="form-control" onchange="upz_option()">
+                                        <option value="0">জেলা</option>
+                                        <option value="1">নরসিংদী</option>                                             
+                                        <option value="4">গাজীপুর</option>                                             
+                                        <option value="5">শরীয়তপুর</option>                                             
+                                        <option value="6">নারায়ণগঞ্জ</option>                                             
+                                        <option value="8">টাঙ্গাইল</option>                                             
+                                        <option value="10">কিশোরগঞ্জ</option>                                             
+                                        <option value="12">মানিকগঞ্জ</option>                                             
+                                        <option value="14">ঢাকা</option>                                             
+                                        <option value="15">মুন্সিগঞ্জ</option>                                             
+                                        <option value="16">রাজবাড়ী</option>                                             
+                                        <option value="17">মাদারীপুর</option>                                             
+                                        <option value="18">গোপালগঞ্জ</option>                                             
+                                        <option value="19">ফরিদপুর</option>                            
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>উপজেলা</label>
+                                    <select id="upz_id" name="upz_id" class="form-control">
+                                        <option value="0">উপজেলা</option>
+                                        <option value="6">বেলাবো</option>
+                                        <option value="7">মনোহরদী</option>
+                                        <option value="8">নরসিংদী</option>
+                                        <option value="9">পলাশ</option>
+                                        <option value="10">রায়পুর</option>
+                                        <option value="11">শিবপুর</option>
+                                                                            
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>সমিতির অবস্থা</label>
+                                    <select name="s_type" class="form-control">
+                                        <option selected="" value="0">সকল</option>                                                                       
+                                        <option value="1">কার্যকর</option>                                                                       
+                                        <option value="2">অকার্যকর</option>                                                                       
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label> &nbsp;  &nbsp; </label>
+                                    <button class="btn btn-primary btn-block"><i class="fa fa-filter"></i> অনুসন্ধান</button>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        
+                        <table id="dynamic-table" class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="dynamic-table_info">
+                                <thead>
+                                    <tr role="row"><th style="display: none; width: 10px;" class="sorting_asc" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"></th><th style="width: 65px;" class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="ক্রমিক: activate to sort column ascending">ক্রমিক</th><th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="সমিতির নাম: activate to sort column ascending" style="width: 532px;">সমিতির নাম</th><th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="সমিতির সংগঠকের নাম: activate to sort column ascending" style="width: 244px;">সমিতির সংগঠকের নাম</th><th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="সমিতির নিবন্ধন নং ও তারিখ: activate to sort column ascending" style="width: 365px;">সমিতির নিবন্ধন নং ও তারিখ</th><th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="বিস্তারিত: activate to sort column ascending" style="width: 57px;">বিস্তারিত</th></tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr role="row" class="odd">
+                                            <td style="display:none" class="sorting_1">0</td>
+                                            <td style="text-align: center">১</td>
+                                            <td>সিংগাইর বহুমূখী সমবায় সমিতি লিঃ।</td>
+                                            <td>জনাব মোঃ এমদাদুল হক</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ০১ তারিখ- ২৮/০২/০৮ ইং। </td>
+                                            <td style="text-align: center">
+                                                <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="even">
+                                            <td style="display:none" class="sorting_1">1</td>
+                                            <td style="text-align: center">২</td>
+                                            <td>আপন গৃহ বহুমুখী সমবায় সমিতি লিঃ।</td>
+                                            <td>জনাব কাজী মোঃ জিয়া উদ্দিন</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ১৪,  তারিখ- ২৩/০৯/১০ইং।</td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="odd">
+                                            <td style="display:none" class="sorting_1">2</td>
+                                            <td style="text-align: center">৩</td>
+                                            <td>রুরাল ডেভলপমেন্ট প্রোগ্রাম ফাইন্যান্স এন্ড ইনভেস্টমেন্ট মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লিঃ।</td>
+                                            <td>জনাব মোঃ বিল্লাল হোসেন</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ৩১৮ তারিখ- ১১/১০/০৭ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="even">
+                                            <td style="display:none" class="sorting_1">3</td>
+                                            <td style="text-align: center">৪</td>
+                                            <td>আল আকছা ইসলামী মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লি:।</td>
+                                            <td>জনাব মোঃ সাইদুর রহমান</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ১৭৯ তারিখ- ০৩/০৪/০৫ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="odd">
+                                            <td style="display:none" class="sorting_1">4</td>
+                                            <td style="text-align: center">৫</td>
+                                            <td>আরবান ফাইন্যান্স এন্ড কমার্স মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লি:।</td>
+                                            <td>জনাব খন্দকার আবুল কালাম আজাদ</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ১২২২,  তারিখ- ০৬/০৯/০৬ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="even">
+                                            <td style="display:none" class="sorting_1">5</td>
+                                            <td style="text-align: center">৬</td>
+                                            <td>সুমাইয়া মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লি:।</td>
+                                            <td>জনাব শেখ মিরাজুল ইসলাম</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ১৯২ তারিখ- ০৭/০৪/০৫ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="odd">
+                                            <td style="display:none" class="sorting_1">6</td>
+                                            <td style="text-align: center">৭</td>
+                                            <td>আল-ফাতাহ্ মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লিঃ।</td>
+                                            <td>জনাব মোঃ শাহিনুজ্জামান</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ০১ তারিখ- ২২/০২/০৯ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="even">
+                                            <td style="display:none" class="sorting_1">7</td>
+                                            <td style="text-align: center">৮</td>
+                                            <td>সেফটি ফাষ্ট মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লিঃ</td>
+                                            <td>মোঃ মিজানুর রহমান</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ১০২৫ তারিখ- ২৯/১২/০৫ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="odd">
+                                            <td style="display:none" class="sorting_1">8</td>
+                                            <td style="text-align: center">৯</td>
+                                            <td>তামাদ্দুন মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লিঃ।  </td>
+                                            <td>জনাব মোঃ জালালুদ্দীন আহমদ</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ১১৪৩ তারিখ- ২০/০৮/০৭ ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+
+                                        </tr><tr role="row" class="even">
+                                            <td style="display:none" class="sorting_1">9</td>
+                                            <td style="text-align: center">১০</td>
+                                            <td>গড়বাড়ী বাজার ক্ষুদ্র ব্যবসায়ী বহুমূখী সমবায় সমিতি লিঃ। </td>
+                                            <td>জনাব কবির হোসেন</td>
+                                            <td>নিবন্ধন   নং- 0 তারিখ- নিবন্ধন নং- ৬২, তারিখ-২৭/০৮/০১ইং। </td>
+                                            <td style="text-align: center">
+                                                    <a href="shomitee-details.html">বিস্তারিত</a>
+                                            </td>
+                                            
+
+                                        </tr></tbody>
+                            </table>
+
+                            <br>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="headline">সর্বশেষ খবর</h2>
+                        <div class="border-div"></div>
+                        <div class="news-list">
+                            <ul class="news-slider">
+                                <li>
+                                    <div class="thumbnail wow fadeInUp">
+                                        <div class="caption">
+                                            <h3 class="text-info">ফরিদপুর জেলা</h3>
+                                            <p>সমবায় কর্মকর্তার সাথে কথা বলতে "কল করুন" এবং "বিস্তারিত"</p>
+                                            <a href="tel:+8801718-679911" class="btn btn-default btn-sm"><i class="fa fa-phone"></i> কল করুন</a>
+                                            <a href="news-details.html" class="btn btn-default btn-sm float-right">বিস্তারিত</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="thumbnail wow fadeInUp">
+                                        <div class="caption">
+                                            <h3 class="text-info">ফরিদপুর জেলা</h3>
+                                            <p>সমবায় কর্মকর্তার সাথে কথা বলতে "কল করুন" এবং "বিস্তারিত"</p>
+                                            <a href="tel:+8801718-679911" class="btn btn-default btn-sm"><i class="fa fa-phone"></i> কল করুন</a>
+                                            <a href="news-details.html" class="btn btn-default btn-sm float-right">বিস্তারিত</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                    
+                                <li>
+                                    <div class="thumbnail wow fadeInUp">
+                                        <div class="caption">
+                                            <h3 class="text-info">ফরিদপুর জেলা</h3>
+                                            <p>সমবায় কর্মকর্তার সাথে কথা বলতে "কল করুন" এবং "বিস্তারিত"</p>
+                                            <a href="tel:+8801718-679911" class="btn btn-default btn-sm"><i class="fa fa-phone"></i> কল করুন</a>
+                                            <a href="news-details.html" class="btn btn-default btn-sm float-right">বিস্তারিত</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+            <div class="footer-top bn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>সরাসরি লিংক</h5>
+                            <div class="border-div"></div>
+                            <ul>
+                                <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                                <li><a href="news.html">খবর</a></li>
+                                <li><a href="contact.html">যোগাযোগ</a></li>
+                                <li><a href="download.html">ডাউনলোড</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>অন্যান লিংক</h5>
+                            <div class="border-div"></div>
+                            <ul>
+                                <li><a href="about.html">ব্লগ</a></li>
+                                <li><a href="news.html">অফ এ কিউ</a></li>
+                                <li><a href="contact.html">প্রাইভেসি এন্ড পলিসি </a></li>
+                                <li><a href="download.html">ডাউনলোড</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>বিভাগের কিছু সমিতি</h5>
+                            <div class="border-div"></div>
+                            <ul>
+                                <li><a href="about.html">সমবায় সমিতি</a></li>
+                                <li><a href="news.html">ফরিদপুর জেলা</a></li>
+                                <li><a href="contact.html">যোগাযোগ</a></li>
+                                <li><a href="download.html">ডাউনলোড</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 text-right">
+                            <h5>গুরুত্বপূর্ণ লিংক</h5>
+                            <div class="border-div float-right"></div>
+                            <br>
+                            <ul>
+                                <li><a href="http://www.coop.gov.bd/">সমবায় অধিদপ্তর</a></li>
+                                <li><a href="http://www.bca.gov.bd/">বাংলাদেশ সমবায় একাডেমি</a></li>
+                                <li><a href="http://www.geeksntechnology.com/ors/">অনলাইন রেজিস্ট্রেশন</a></li>
+                                <li><a href="http://bit.ly/2mS8nAW">সমবায় অধিদপ্তর, অ্যাপস</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom bn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            কপিরাইট © ২০১৮ - বিভাগীয় সমবায় কার্যালয়, ঢাকা।
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            উদ্ভাবনী প্রকল্প : "অনলাইন অফিস ব্যবস্থাপনা"।
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+      <!-- script -->
+      <script src="vendors/jquery/jquery.min.js"></script>
+      
+      <script src="js/main.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      
+      <script src="vendors/js/bootstrap.min.js"></script>
+      <script src="vendors/js/wow.min.js"></script>
+      <script src="vendors/js/lightslider.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+          new WOW().init();
+    
+          $(document).ready(function(){
+            $(".res-nav-switcher").click(function(){
+                $("nav").slideToggle();
+            })
+    
+            $("#lightSlider").lightSlider({
+                item: 4,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }
+            ]
+            });
+            $("#lightSlider1").lightSlider({
+                item: 3,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }
+            ]
+            });
+            $("#lightSlider2").lightSlider({
+                item: 4,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }]
+            });
+    
+            
+            $("#brand").lightSlider({
+                item: 6,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                      }
+                }]
+            });
+    
+     
+          });
+      </script>
+    </body>
+    </html>

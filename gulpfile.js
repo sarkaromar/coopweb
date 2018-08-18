@@ -41,7 +41,13 @@ var sass          = require('gulp-sass'),
       //wow.js
       gulp.src('node_modules/wow.js/dist/*.min.js')
       .pipe(gulp.dest('app/vendors/js'));
-
+      //lightbox2
+      gulp.src('node_modules/lightbox2/dist/css/*.min.css')
+      .pipe(gulp.dest('app/vendors/css'));
+      gulp.src('node_modules/lightbox2/dist/js/*.min.js')
+      .pipe(gulp.dest('app/vendors/js'));
+      gulp.src('node_modules/lightbox2/dist/images/**')
+      .pipe(gulp.dest('app/vendors/images'));
     });
 
     // Sass task
